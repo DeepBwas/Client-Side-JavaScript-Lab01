@@ -1,26 +1,63 @@
 @charset "utf-8";
-
-body {
+body{
     font-family: helvetica, sans-serif;
     width: 350px;
+    margin: 3vw;
+    user-select: none;  
 }
-
-label {
+label{
     font-weight: bold;
 }
-
-div {
+div{
     padding-bottom: 20px;
 }
-
-input[type="text"] {
+input[type="text"]{
     padding: 5px;
     width: 150px;
 }
-/* Hide the output paragraph until the user has submitted the form */
-p {
+p{
     background: #ffc125;
     color: #5e2612;
     padding: 10px;
     visibility: hidden;
+    border-radius: 5px;
+    margin-top: -10px;
+    border: #0e0e0e 1px dashed;
+}
+.check{
+    background: #ffc125;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    color: #5e2612;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: #0e0e0e 1px dashed;
+    font-weight: bold;
+    margin-bottom: 10px;
+    gap: 40px;
+}
+.check input{
+    cursor: pointer;
+    transform: translateX(-35px);
+    color: red;
+}
+.randomize{
+    background: #ffc125;
+    color: #5e2612;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: #0e0e0e 1px dashed;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.randomize:hover{
+    transform: scale(1.02);
+}
+.randomize:active{
+    transform: scale(0.98);
 }
